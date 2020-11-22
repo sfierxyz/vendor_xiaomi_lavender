@@ -33,6 +33,7 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
+  shared_libs: ["libc++", "libc", "libcutils", "libdl", "liblog", "libm"],
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
